@@ -15,6 +15,8 @@
         #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
       {{ end }}
     </div>
+    {{ .Summary }}
+    <a href="{{ .Permalink }}" class="read-on">続きを読む → </a>
   </div>
   {{ end }}
 </main>

@@ -252,6 +252,10 @@ article #share-this {
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
+.read-on {
+  display: block;
+  margin-top: 20px;
+}
 .meta {
   color: #999;
   font-size: 12px;
