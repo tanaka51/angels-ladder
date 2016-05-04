@@ -31,6 +31,7 @@ main#index a,
 main#index a:visited,
 main#list a,
 main#list a:visited,
+.article-header a:visited,
 nav a,
 nav a:visited {
   color: #666;
@@ -45,6 +46,7 @@ header a:hover,
 article a:hover,
 main#index a:hover,
 main#list a:hover,
+.article-header a:hover,
 nav a:hover {
   color: #50BBB6;
 }
@@ -240,6 +242,7 @@ article #share-this {
 /* Common
 --------------------------------------------------*/
 .article-header {
+  display: block;
   border-left: 4px solid #50BBB6;
   margin: 10px 0 25px -4px;
   padding: 5px 0 5px 10px;

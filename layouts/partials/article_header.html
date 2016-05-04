@@ -1,0 +1,9 @@
+<div class="article-header">
+  <h1><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h1>
+  <div class="meta">
+    {{ .Date.Format "Jan 2, 2006" }} &nbsp;
+    {{ range .Params.tags }}
+      #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+    {{ end }}
+  </div>
+</div>

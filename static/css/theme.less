@@ -28,6 +28,7 @@ h6{font-size: 16px;}
 header a, header a:visited,
 main#index a, main#index a:visited,
 main#list a, main#list a:visited,
+.article-header a:visited,
 nav a, nav a:visited{ color: #666; }
 
 article a, article a:visited,
@@ -37,6 +38,7 @@ header a:hover,
 article a:hover,
 main#index a:hover,
 main#list a:hover,
+.article-header a:hover,
 nav a:hover{ color: @color; }
 
 main#index .meta a,
@@ -279,6 +281,7 @@ article #share-this {
 /* Common
 --------------------------------------------------*/
 .article-header{
+  display: block;
   border-left: 4px solid @color;
   margin: 10px 0 25px -4px;
   padding: 5px 0 5px 10px;

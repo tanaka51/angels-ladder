@@ -6,17 +6,7 @@
 <main id="index" role="main">
   {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
   {{ range $paginator.Pages }}
-  <div class="summary">
-    <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
-    <div class="meta">
-      {{ .Date.Format "Jan 2, 2006" }} &nbsp;
-      {{ range .Params.tags }}
-        #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
-      {{ end }}
-    </div>
-    {{ .Summary }}
-    <a href="{{ .Permalink }}" class="read-on">続きを読む → </a>
-  </div>
+    {{ partial "summary" . }}
   {{ end }}
 </main>
 
